@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+:root{
+
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    margin:0;
+    padding: 0;
+}
+body{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 6, 240);
+    font-family:'Zen Dots',Helvetica,Arial,Sans-serif;
+}
+main{
+    width: 80%;
+    border-radius:2em;
+    background-color: white;
+}
+input:not([type=radio]):not([type=checkbox]),select,option{
+    display: block;
+    padding: .5em;
+    width: 80%;
+}
+input:active,input:focus{
+    outline: none;
+}
+input[type=radio],input[type=checkbox]{
+    margin:.5em;
+}
+#header{
+    text-align: center;
+    margin:.5em;
+    color: white;
+    background-color:rgb(62, 59, 233) ;
+    padding: 3em;
+    border-radius: inherit;
+}
+section{
+    margin-left: 2em;
+}
+button{
+    width:40%;
+    margin:2em;
+    text-align:center;
+    padding:2em;
+    border:none;
+    background-color:rgb(62, 59, 233);
+    color:white;
+    border-radius:.7em;
+    font-size:1.2em;
+    box-shadow:.2em .5em black;
+}

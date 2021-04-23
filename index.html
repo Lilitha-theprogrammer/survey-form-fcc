@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="header">
+            <h1 id="title">Electric car Survey</h1>
+            <p id="description">A survey on electric cars</p>
+        </section>
+        <form netlify id="survey-form">
+            <section id='details'>
+            <label for="name-label" id="name-label">Name:</label>
+            <input type="text" placeholder="Enter Your Name" id="name" required>
+            <br>
+            <label for="email-label" id="email-label">Email:</label>
+            <input type="email"  id="email" placeholder="Enter Email Here" required>
+            <br>
+            <label for="number-label" id="number-label"> Age:</label>
+            <input type="number" id="number" placeholder="Enter Age Here" min="18"  max="100" required>
+            <br> 
+            </section>
+            <section>
+                <label for="improvement">Do you feel electric cars improve the environment ? :</label>
+                <br>
+                <input type="radio" name="improvement" id="Definately"  value='yes'checked>Definitely
+                <input type="radio" name="improvement" id="kindof" value="kindof">Somewhat an improvement
+                <input type="radio" name="improvement" id="unsure" value='unsure'>Unsure
+                <input type="radio" name="improvement" id="no" value='no'>Not at all
+            </section>
+            <br>
+            <section>
+                <label for="automaker">Choose your favourite car maker</label>
+                <select name="dropdown" id="dropdown" >
+                    <option value="Toyota">Toyota</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Other">Other</option>
+                </select>
+            </section>
+            <section>
+                <label for='factors'>
+                    Which of the following factors would you consider when buying an electric vehicle?
+                </label>
+                <br>
+                <input type="checkbox" name="factors" value="price">Price
+                <input type="checkbox" name="factors" value="impact">Environmental Impact
+                <input type="checkbox" name="factors" value="economy">Fuel Economy
+                <input type="checkbox" name="factors" value="carbon-emission">Amount of carbon emissions
+                <input type="checkbox" name="factors" value="tax">Cheaper road tax
+            </section>
+            <br>
+            <br>
+            <section id="comments">
+                <label for="comments">Comments:</label><br>
+                <textarea rows='10' cols='50'></textarea>
+            </section>
+            <button type="submit" id='submit'>Submit</button>
+        </form>
+    </main>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
